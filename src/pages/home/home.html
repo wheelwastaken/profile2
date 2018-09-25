@@ -1,14 +1,44 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Profile 
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class = "main">
+  
+  <div class = "header">
+    <button type = "button" class = "back"><ion-icon name = "arrow-back"></ion-icon></button>
+    <button type = "button" class = "settings"><ion-icon name = "cog"></ion-icon></button>
+    <h1 text-uppercase>profile</h1>
+  </div>
+
+  <img src = "../../assets/imgs/harvard_smith_field.jpg" alt = "Header Image" class = "headerImg" width="315" height="150">
+  <img src = "../../assets/imgs/superPoseA.jpg" alt = "Profile Picture" class = "profilePic" width="80" height="80">
+
+
+  <div class = "content">
+
+  <p class = "names">Will Haller<br>@willhaller</p>
+
+    <div class = "navBar2">
+        <button type = "button" class = "classesButton">main</button>
+        <button type = "button" class = "examsButton">classes</button>
+        <button type = "button" class = "eventsButton">events</button>
+
+    </div>
+
+    <!-- UPLOAD BUTTON -->
+
+    <button class = "upload">UPLOAD <ion-icon name = "cloud-upload"></ion-icon></button>
+
+
+      <ul class = "buttons">
+          <li><button type = "button" class = "leftButton"><ion-icon name = "home"></ion-icon><br> Home</button></li>
+          <li><button type = "button" class = "midButton"><ion-icon name = "calendar"></ion-icon><br> Events</button></li>
+          <li><button type = "button" class = "midButton2"><ion-icon name = "nutrition"></ion-icon><br> Dining</button>
+          <button type = "button" class = "rightButton"><ion-icon name = "person"></ion-icon><br> Profile</button></li>
+      </ul>
+  </div>
 </ion-content>
